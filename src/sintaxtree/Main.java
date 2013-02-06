@@ -27,5 +27,6 @@ public class Main {
         int expresionResult;
         
         expresionResult = (!sintaxTree.isEmptySintaxTree()) ? sintaxTree.getTreeRoot().evaluate() : 0;       
+        System.out.println(expresionResult);
     }
 }
