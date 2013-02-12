@@ -9,15 +9,19 @@ public abstract class UnaryOperationNode extends OperatiorNode{
     
     private Node nextNode;
 
-    public UnaryOperationNode(Node nextNode) {
-        this.nextNode = nextNode;
+    public UnaryOperationNode() {
+        this.nextNode = null;
     }
 
     public Node getNextNode() {
         return nextNode;
     }
+
+    public void setNextNode(Node nextNode) {
+        this.nextNode = nextNode;
+    }
         
     @Override
-    public abstract int evaluate();
+    public abstract double evaluate();
     
 }

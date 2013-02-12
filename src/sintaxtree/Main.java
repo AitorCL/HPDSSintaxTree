@@ -2,8 +2,8 @@
 package sintaxtree;
 
 import sintaxtree.Nodes.ConstantNode;
-import sintaxtree.Nodes.Operators.AddBinaryOperatorNode;
-import sintaxtree.Nodes.Operators.MultiplicationBinaryOperartorNode;
+import sintaxtree.Nodes.Operators.binary.AddBinaryOperatorNode;
+import sintaxtree.Nodes.Operators.binary.MultiplicationBinaryOperartorNode;
 
 
 public class Main {
@@ -24,7 +24,7 @@ public class Main {
         addNode.setLeftNode(constantNodeUno);
         addNode.setRigthNode(mulNode);
         sintaxTree.setTreeRoot(addNode);
-        int expresionResult;
+        double expresionResult;
         
         expresionResult = (!sintaxTree.isEmptySintaxTree()) ? sintaxTree.getTreeRoot().evaluate() : 0;       
         System.out.println(expresionResult);

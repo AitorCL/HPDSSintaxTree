@@ -4,14 +4,14 @@ package sintaxtree.Nodes;
 
 public class ConstantNode extends Node {
 
-    private int value;
+    private double value;
 
-    public ConstantNode(int value) {
+    public ConstantNode(double value) {
         this.value = value;
     }
     
     @Override
-    public int evaluate() {
+    public double evaluate() {
         return value;
     }
     

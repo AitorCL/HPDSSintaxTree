@@ -1,5 +1,7 @@
 
-package sintaxtree.Nodes.Operators;
+package sintaxtree.Nodes.Operators.binary;
+
+import sintaxtree.Nodes.Operators.BinaryOperationNode;
 
 
 public class AddBinaryOperatorNode extends BinaryOperationNode{
@@ -9,7 +11,7 @@ public class AddBinaryOperatorNode extends BinaryOperationNode{
     }
 
     @Override
-    public int evaluate() {
+    public double evaluate() {
         return (this.getLeftNode().evaluate()+this.getRigthNode().evaluate());
     }
     

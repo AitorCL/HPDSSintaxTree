@@ -32,5 +32,5 @@ public abstract class BinaryOperationNode extends OperatiorNode{
     }
     
     @Override
-    public abstract int evaluate();
+    public abstract double evaluate();
 }
