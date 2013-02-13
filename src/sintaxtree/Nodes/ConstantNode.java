@@ -9,6 +9,14 @@ public class ConstantNode extends Node {
     public ConstantNode(double value) {
         this.value = value;
     }
+
+    public double getValue() {
+        return value;
+    }
+
+    public void setValue(double value) {
+        this.value = value;
+    }
     
     @Override
     public double evaluate() {

@@ -6,6 +6,8 @@ import sintaxtree.Nodes.Operators.BinaryOperationNode;
 
 public class AddBinaryOperatorNode extends BinaryOperationNode{
 
+
+    
     public AddBinaryOperatorNode() {
         super();
     }

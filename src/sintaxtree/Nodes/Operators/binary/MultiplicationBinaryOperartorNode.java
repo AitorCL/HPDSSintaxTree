@@ -11,7 +11,7 @@ public class MultiplicationBinaryOperartorNode extends BinaryOperationNode {
 
     @Override
     public double evaluate() {
-        return (this.getLeftNode().evaluate()+this.getRigthNode().evaluate());
+        return (this.getLeftNode().evaluate()*this.getRigthNode().evaluate());
     }
     
     

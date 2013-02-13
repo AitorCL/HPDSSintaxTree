@@ -3,9 +3,9 @@ package sintaxtree.Nodes.Operators.Unary;
 
 import sintaxtree.Nodes.Operators.UnaryOperationNode;
 
-public class SinUninaryOperatorNode extends UnaryOperationNode{
+public class SinUnaryOperatorNode extends UnaryOperationNode{
 
-    public SinUninaryOperatorNode() {
+    public SinUnaryOperatorNode() {
         super();
     }
 
