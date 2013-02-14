@@ -7,9 +7,12 @@ import sintaxtree.Nodes.OperatiorNode;
 
 public abstract class BinaryOperationNode extends OperatiorNode{
     private Node leftNode, rigthNode;
-    
-    
 
+    public BinaryOperationNode(Node leftNode, Node rigthNode) {
+        this.leftNode = leftNode;
+        this.rigthNode = rigthNode;
+    }
+    
     public BinaryOperationNode() {
         this.leftNode = null;
         this.rigthNode = null;

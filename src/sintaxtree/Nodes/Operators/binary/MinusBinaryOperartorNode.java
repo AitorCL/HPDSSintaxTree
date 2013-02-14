@@ -1,11 +1,12 @@
 package sintaxtree.Nodes.Operators.binary;
 
+import sintaxtree.Nodes.Node;
 import sintaxtree.Nodes.Operators.BinaryOperationNode;
 
 public class MinusBinaryOperartorNode extends BinaryOperationNode {
 
-    public MinusBinaryOperartorNode() {
-        super();
+    public MinusBinaryOperartorNode(Node leftNode, Node rigthNode) {
+        super(leftNode, rigthNode);
     }
 
     @Override

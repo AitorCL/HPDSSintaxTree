@@ -9,9 +9,8 @@ public class CosUnaryOperationNodeTest {
     
     @Test
     public void CosUnaryOperationNodeTest() {
-        ConstantNode constantNodeUno = new ConstantNode(0);
-        CosUnaryOperatorNode cosOperatorNode = new CosUnaryOperatorNode();
-        cosOperatorNode.setNextNode(constantNodeUno);
+        ConstantNode constantNodeCero = new ConstantNode(0);
+        CosUnaryOperatorNode cosOperatorNode = new CosUnaryOperatorNode(constantNodeCero);
         Assert.assertEquals(1, cosOperatorNode.evaluate(), 0);
     }
 

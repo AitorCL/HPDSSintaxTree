@@ -9,9 +9,8 @@ public class sinUnaryOperatorNodeTest {
 
     @Test
     public void sinUnaryOperatorNodeTest() {
-        ConstantNode constantNodeUno = new ConstantNode(0);
-        SinUnaryOperatorNode sinOperatorNode = new SinUnaryOperatorNode();
-        sinOperatorNode.setNextNode(constantNodeUno);
+        ConstantNode constantNodeCero = new ConstantNode(0);
+        SinUnaryOperatorNode sinOperatorNode = new SinUnaryOperatorNode(constantNodeCero);
         Assert.assertEquals(0, sinOperatorNode.evaluate(), 0);
     }
 

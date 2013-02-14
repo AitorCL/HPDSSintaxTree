@@ -10,11 +10,12 @@ public class MultipicationBinaryOperatorNodeTest {
     @Test
     public void multiplicationBinaryOperatorTest() {
         ConstantNode constantNodeUno = new ConstantNode(1);
-        ConstantNode constantNodeDos = new ConstantNode(1);
-        MultiplicationBinaryOperartorNode multNode = new MultiplicationBinaryOperartorNode();
+        ConstantNode constantNodeDos = new ConstantNode(2);
+        MultiplicationBinaryOperartorNode multNode = new MultiplicationBinaryOperartorNode(constantNodeUno,
+                                                                                           constantNodeDos);
         multNode.setLeftNode(constantNodeUno);
         multNode.setRigthNode(constantNodeDos);
-        Assert.assertEquals(1, multNode.evaluate(), 0);
+        Assert.assertEquals(2, multNode.evaluate(), 0);
     }
 
 }

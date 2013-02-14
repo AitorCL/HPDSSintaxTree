@@ -1,12 +1,14 @@
 
 package sintaxtree.Nodes.Operators.Unary;
 
+import sintaxtree.Nodes.Node;
 import sintaxtree.Nodes.Operators.UnaryOperationNode;
 
 
 public class CosUnaryOperatorNode extends UnaryOperationNode {
-    public CosUnaryOperatorNode() {
-        super();
+
+    public CosUnaryOperatorNode(Node nextNode) {
+        super(nextNode);
     }
 
     @Override

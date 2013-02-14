@@ -9,8 +9,8 @@ public abstract class UnaryOperationNode extends OperatiorNode{
     
     private Node nextNode;
 
-    public UnaryOperationNode() {
-        this.nextNode = null;
+    public UnaryOperationNode(Node nextNode) {
+        this.nextNode = nextNode;
     }
 
     public Node getNextNode() {
