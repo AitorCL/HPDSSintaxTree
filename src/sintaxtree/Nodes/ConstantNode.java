@@ -1,7 +1,5 @@
 
-package sintaxtree.Nodes.Values;
-
-import sintaxtree.Nodes.Node;
+package sintaxtree.Nodes;
 
 
 public class ConstantNode extends Node {

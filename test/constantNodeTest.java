@@ -1,6 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
-import sintaxtree.Nodes.Values.ConstantNode;
+import sintaxtree.Nodes.ConstantNode;
 
 public class constantNodeTest {
     
