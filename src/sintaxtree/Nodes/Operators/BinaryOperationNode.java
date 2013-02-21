@@ -3,6 +3,7 @@ package sintaxtree.Nodes.Operators;
 
 import sintaxtree.Nodes.Node;
 import sintaxtree.Nodes.OperatiorNode;
+import sintaxtree.Nodes.Values.Value;
 
 
 public abstract class BinaryOperationNode extends OperatiorNode{
