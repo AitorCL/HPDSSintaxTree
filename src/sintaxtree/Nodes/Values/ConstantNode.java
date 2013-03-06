@@ -2,27 +2,26 @@
 package sintaxtree.Nodes.Values;
 
 import sintaxtree.Nodes.Node;
+import sintaxtree.evaluator.Type;
 
 
 public class ConstantNode extends Node {
 
-    private double value;
+    private final Type value;
 
-    public ConstantNode(double value) {
+    public ConstantNode(Type value) {
         this.value = value;
     }
 
-    public double getValue() {
+    public Type getValue() {
         return value;
     }
 
-    public void setValue(double value) {
-        this.value = value;
-    }
-    
     @Override
-    public double evaluate() {
+    public Type evaluate() {
         return value;
     }
+
+
     
 }

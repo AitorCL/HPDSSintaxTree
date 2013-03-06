@@ -4,6 +4,7 @@ package sintaxtree.Nodes.Operators;
 import sintaxtree.Nodes.Node;
 import sintaxtree.Nodes.OperatiorNode;
 import sintaxtree.Nodes.Values.Value;
+import sintaxtree.evaluator.Type;
 
 
 public abstract class UnaryOperationNode extends OperatiorNode{
@@ -23,6 +24,6 @@ public abstract class UnaryOperationNode extends OperatiorNode{
     }
         
     @Override
-    public abstract double evaluate();
+    public abstract Type evaluate();
     
 }

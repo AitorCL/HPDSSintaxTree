@@ -1,7 +1,9 @@
 package sintaxtree.Nodes.Values;
 
 import sintaxtree.Nodes.Node;
+import sintaxtree.evaluator.Type;
 
 public abstract class Value extends Node{
-    public abstract double evaluate();   
+    @Override
+    public abstract Type evaluate();   
 }

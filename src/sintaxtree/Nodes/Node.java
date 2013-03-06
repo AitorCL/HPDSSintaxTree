@@ -1,8 +1,8 @@
 
 package sintaxtree.Nodes;
 
-import sintaxtree.Nodes.Values.Value;
+import sintaxtree.evaluator.Type;
 
 public abstract class Node {    
-    public abstract double evaluate();
+    public abstract Type evaluate();
 }

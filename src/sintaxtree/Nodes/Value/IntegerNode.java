@@ -1,16 +1,18 @@
 
 package sintaxtree.Nodes.Value;
 
+import sintaxtree.evaluator.Type;
+
 public class IntegerNode extends Value{
 
-    private int integerValue;
+    private Type integerValue;
 
-    public IntegerNode(int integerValue) {
+    public IntegerNode(Type integerValue) {
         this.integerValue = integerValue;
     }
     
     @Override
-    public double evaluate() {
+    public Type evaluate() {
         return integerValue;
     }
     

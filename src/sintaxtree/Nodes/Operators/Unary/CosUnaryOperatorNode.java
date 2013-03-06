@@ -3,7 +3,7 @@ package sintaxtree.Nodes.Operators.Unary;
 
 import sintaxtree.Nodes.Node;
 import sintaxtree.Nodes.Operators.UnaryOperationNode;
-import sintaxtree.Nodes.Values.Value;
+import sintaxtree.evaluator.Type;
 
 
 public class CosUnaryOperatorNode extends UnaryOperationNode {
@@ -13,7 +13,7 @@ public class CosUnaryOperatorNode extends UnaryOperationNode {
     }
 
     @Override
-    public double evaluate() {
+    public Type evaluate() {
         return (Math.cos((this.getNextNode().evaluate())));
     }    
 }
