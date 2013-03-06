@@ -47,12 +47,12 @@ public class numberCalculator extends Calculator{
         return  param0/param1;
     }
     public double DivisionBinaryOperator (double param0, int param1){
-        return  param0-param1;
+        return  param0/param1;
     }
     public double DivisionBinaryOperator (int param0, double param1){
-        return param0-param1;
+        return param0/param1;
     }
     public double DivisionBinaryOperator (double param0, double param1){
-        return param0-param1;
+        return param0/param1;
     }
 }
