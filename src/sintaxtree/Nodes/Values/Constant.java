@@ -2,14 +2,14 @@
 package sintaxtree.Nodes.Values;
 
 import sintaxtree.Nodes.Node;
-import sintaxtree.evaluator.Type;
+import sintaxtree.Type;
 
 
-public class ConstantNode extends Node {
+public class Constant extends Node {
 
     private final Type value;
 
-    public ConstantNode(Type value) {
+    public Constant(Type value) {
         this.value = value;
     }
 

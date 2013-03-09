@@ -1,7 +1,7 @@
 
 package sintaxtree.Nodes;
 
-import sintaxtree.evaluator.Type;
+import sintaxtree.Type;
 
 public abstract class Node {    
     public abstract Type evaluate();

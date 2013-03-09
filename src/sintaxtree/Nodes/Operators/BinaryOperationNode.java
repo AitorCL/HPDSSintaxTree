@@ -2,12 +2,12 @@
 package sintaxtree.Nodes.Operators;
 
 import sintaxtree.Nodes.Node;
-import sintaxtree.Nodes.OperatiorNode;
+import sintaxtree.Nodes.OperatorNode;
 import sintaxtree.Nodes.Values.Value;
-import sintaxtree.evaluator.Type;
+import sintaxtree.Type;
 
 
-public abstract class BinaryOperationNode extends OperatiorNode{
+public abstract class BinaryOperationNode extends OperatorNode{
     private Node leftNode, rigthNode;
 
     public BinaryOperationNode(Node leftNode, Node rigthNode) {

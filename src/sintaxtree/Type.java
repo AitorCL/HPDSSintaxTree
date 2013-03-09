@@ -1,5 +1,5 @@
 
-package sintaxtree.evaluator;
+package sintaxtree;
 
 public abstract class Type<T> {
     private T value;
