@@ -2,16 +2,14 @@
 package sintaxtree.Nodes.Operators;
 
 import sintaxtree.Nodes.Node;
-import sintaxtree.Nodes.OperatorNode;
-import sintaxtree.Nodes.Values.Value;
 import sintaxtree.Type;
 
 
-public abstract class UnaryOperationNode extends OperatorNode{
+public abstract class UnaryOperation extends Operation{
     
     private Node nextNode;
 
-    public UnaryOperationNode(Node nextNode) {
+    public UnaryOperation(Node nextNode) {
         this.nextNode = nextNode;
     }
 
