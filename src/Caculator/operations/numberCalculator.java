@@ -6,16 +6,16 @@ import Caculator.Calculator;
 public class numberCalculator extends Calculator{
     
    
-    public int add (int param0, int param1){
+    public int add (Integer param0, Integer param1){
         return param0+param1;
     }
-    public double add (double param0, int param1){
+    public double add (Double param0, Integer param1){
         return param0+param1;
     }
-    public double add (int param0, double param1){
+    public double add (Integer param0, Double param1){
         return param0+param1;
     }
-    public double add (double param0, double param1){
+    public double add (Double param0, Double param1){
         return param0+param1;
     }
  
