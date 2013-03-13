@@ -45,6 +45,15 @@ public class BinaryOperation extends Operation {
         if ((left.getValue() instanceof Double) && (right.getValue() instanceof Double)) {
             return new numberCalculator();
         }
+        if ((left.getValue() instanceof Double) && (right.getValue() instanceof Integer)) {
+            return new numberCalculator();
+        }
+        if ((left.getValue() instanceof Integer) && (right.getValue() instanceof Integer)) {
+            return new numberCalculator();
+        }
+        if ((left.getValue() instanceof Integer) && (right.getValue() instanceof Double)) {
+            return new numberCalculator();
+        }
         //TODO rest operations.
         return null;
 
@@ -57,7 +66,7 @@ public class BinaryOperation extends Operation {
             }
             //reflexion
             Method method = calculator.getClass().getMethod(operator.getName(), left.getValue().getClass(), right.getValue().getClass());
-            return searchType(method.invoke(calculator, left.getValue(),right.getValue()));
+            return searchType(method.invoke(calculator, left.getValue(), right.getValue()));
         } catch (IllegalAccessException ex) {
             Logger.getLogger(BinaryOperation.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IllegalArgumentException ex) {
@@ -71,15 +80,13 @@ public class BinaryOperation extends Operation {
     }
 
     private Type searchType(Object object) {
-        if(object instanceof Double)
-        {
-            return new DoubleType((double)object);
+        if (object instanceof Double) {
+            return new DoubleType((double) object);
         }
-        if(object instanceof Integer)
-        {
-            return new IntegerType((int)object);
-        }        
+        if (object instanceof Integer) {
+            return new IntegerType((int) object);
+        }
         return null;
-        
+
     }
 }
