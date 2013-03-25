@@ -64,14 +64,9 @@ public class BinaryOperation extends Operation {
             if (calculator == null) {
                 return null;
             }
-            //reflexion
             Method method = calculator.getClass().getMethod(operator.getName(), left.getValue().getClass(), right.getValue().getClass());
             return searchType(method.invoke(calculator, left.getValue(), right.getValue()));
-        } catch (IllegalAccessException ex) {
-            Logger.getLogger(BinaryOperation.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IllegalArgumentException ex) {
-            Logger.getLogger(BinaryOperation.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InvocationTargetException ex) {
+        } catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
             Logger.getLogger(BinaryOperation.class.getName()).log(Level.SEVERE, null, ex);
         } catch (NoSuchMethodException ex) {
             return null;
