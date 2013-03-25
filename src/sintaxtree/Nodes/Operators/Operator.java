@@ -3,7 +3,9 @@ package sintaxtree.Nodes.Operators;
 public class Operator {
 
     public static final Operator add = new Operator("add", '+', OperatorType.BINARY);
-    
+    public static final Operator minus = new Operator("minus", '-', OperatorType.BINARY);
+    public static final Operator mult = new Operator("multication", '*', OperatorType.BINARY);
+    public static final Operator division = new Operator("division", '/', OperatorType.BINARY);
     
     private final String name;
     private final char operator;

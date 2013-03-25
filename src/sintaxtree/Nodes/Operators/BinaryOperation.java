@@ -54,7 +54,6 @@ public class BinaryOperation extends Operation {
         if ((left.getValue() instanceof Integer) && (right.getValue() instanceof Double)) {
             return new numberCalculator();
         }
-        //TODO rest operations.
         return null;
 
     }

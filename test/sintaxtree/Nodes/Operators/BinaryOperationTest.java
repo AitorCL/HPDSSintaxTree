@@ -40,4 +40,26 @@ public class BinaryOperationTest {
         assertEquals(IntegerType.class, node.evaluate().getClass());
         assertEquals(2, (int) node.evaluate().getValue(), 0.0);
     }
+    
+        @Test
+    public void testMinusIntInt() {
+        Node node = new BinaryOperation(new Constant(new IntegerType(1)),
+       new Constant(new IntegerType(1)), Operator.minus);
+        assertEquals(IntegerType.class, node.evaluate().getClass());
+        assertEquals(0, (int) node.evaluate().getValue(), 0.0);
+    }
+                @Test
+    public void testMultIntInt() {
+        Node node = new BinaryOperation(new Constant(new IntegerType(1)),
+       new Constant(new IntegerType(1)), Operator.mult);
+        assertEquals(IntegerType.class, node.evaluate().getClass());
+        assertEquals(1, (int) node.evaluate().getValue(), 0.0);
+    }
+                        @Test
+    public void testDivisionIntInt() {
+        Node node = new BinaryOperation(new Constant(new IntegerType(1)),
+       new Constant(new IntegerType(1)), Operator.division);
+        assertEquals(IntegerType.class, node.evaluate().getClass());
+        assertEquals(1, (int) node.evaluate().getValue(), 0.0);
+    }
 }
