@@ -1,6 +1,7 @@
 package sintaxtree.Nodes.Operators;
 
 import Caculator.Calculator;
+import Caculator.operations.CoreNumberCalculator;
 import Caculator.operations.numberCalculator;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -43,16 +44,16 @@ public class BinaryOperation extends Operation {
             return null;
         }
         if ((left.getValue() instanceof Double) && (right.getValue() instanceof Double)) {
-            return new numberCalculator();
+            return new CoreNumberCalculator();
         }
         if ((left.getValue() instanceof Double) && (right.getValue() instanceof Integer)) {
-            return new numberCalculator();
+            return new CoreNumberCalculator();
         }
         if ((left.getValue() instanceof Integer) && (right.getValue() instanceof Integer)) {
-            return new numberCalculator();
+            return new CoreNumberCalculator();
         }
         if ((left.getValue() instanceof Integer) && (right.getValue() instanceof Double)) {
-            return new numberCalculator();
+            return new CoreNumberCalculator();
         }
         return null;
 
