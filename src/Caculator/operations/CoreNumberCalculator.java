@@ -101,22 +101,26 @@ public class CoreNumberCalculator extends Calculator implements numberCalculator
     }
 
     @Override
+    @Operators("++")
     public int increase(Integer param0) {
-        return param0++;
+        return param0+1;
     }
 
     @Override
+    @Operators("++")
     public double increase(Double param0) {
-        return param0++;
+        return param0+1;
     }
 
     @Override
+    @Operators("--")
     public int decrease(Integer param0) {
-        return param0--;
+        return param0-1;
     }
 
     @Override
+    @Operators("--")
     public double decrease(Double param0) {
-        return param0--;
+        return param0-1;
     }
 }
