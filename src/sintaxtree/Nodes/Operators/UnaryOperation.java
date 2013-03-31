@@ -1,12 +1,10 @@
-
 package sintaxtree.Nodes.Operators;
 
 import sintaxtree.Nodes.Node;
 import sintaxtree.Type;
 
+public class UnaryOperation extends Operation {
 
-public abstract class UnaryOperation extends Operation{
-    
     private Node nextNode;
 
     public UnaryOperation(Node nextNode) {
@@ -20,8 +18,17 @@ public abstract class UnaryOperation extends Operation{
     public void setNextNode(Node nextNode) {
         this.nextNode = nextNode;
     }
-        
+
     @Override
-    public abstract Type evaluate();
-    
+    public Type evaluate() {
+        throw new UnsupportedOperationException("Not yet implemented");
+    }
+
+    public Object increase() {
+        throw new UnsupportedOperationException("Not yet implemented");
+    }
+
+    public Object decrease() {
+        throw new UnsupportedOperationException("Not yet implemented");
+    }
 }
