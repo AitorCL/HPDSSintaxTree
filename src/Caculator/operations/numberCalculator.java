@@ -1,8 +1,6 @@
 
 package Caculator.operations;
 
-import Caculator.Calculator;
-
 public interface numberCalculator {
     
    
