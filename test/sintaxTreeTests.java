@@ -1,17 +1,12 @@
 
 import static java.lang.System.out;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Test;
 import sintaxtree.Nodes.Node;
 import sintaxtree.Nodes.Operators.BinaryOperation;
 import sintaxtree.Nodes.Operators.Operator;
 import sintaxtree.Nodes.Values.Constant;
 import sintaxtree.SintaxTree;
-import sintaxtree.Type;
 import sintaxtree.types.DoubleType;
 
 public class sintaxTreeTests {
