@@ -23,4 +23,10 @@ public interface numberCalculator {
     public double division (Double param0, Integer param1);
     public double division (Integer param0, Double param1);
     public double division (Double param0, Double param1);
+    
+    public int increase(Integer param0);
+    public double increase(Double param0);
+    
+     public int decrease(Integer param0);
+    public double decrease(Double param0);
 }

@@ -99,4 +99,24 @@ public class CoreNumberCalculator extends Calculator implements numberCalculator
     public double division(Double param0, Double param1) {
         return param0 / param1;
     }
+
+    @Override
+    public int increase(Integer param0) {
+        return param0++;
+    }
+
+    @Override
+    public double increase(Double param0) {
+        return param0++;
+    }
+
+    @Override
+    public int decrease(Integer param0) {
+        return param0--;
+    }
+
+    @Override
+    public double decrease(Double param0) {
+        return param0--;
+    }
 }

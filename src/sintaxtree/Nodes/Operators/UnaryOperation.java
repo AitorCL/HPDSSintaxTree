@@ -5,18 +5,16 @@ import sintaxtree.Type;
 
 public class UnaryOperation extends Operation {
 
-    private Node nextNode;
+    private final Node nextNode;
+    private final Operator unaryOperator;
 
-    public UnaryOperation(Node nextNode) {
+    public UnaryOperation(Node nextNode, Operator unaryOperator) {
         this.nextNode = nextNode;
+        this.unaryOperator = unaryOperator;
     }
 
     public Node getNextNode() {
         return nextNode;
-    }
-
-    public void setNextNode(Node nextNode) {
-        this.nextNode = nextNode;
     }
 
     @Override
@@ -24,6 +22,7 @@ public class UnaryOperation extends Operation {
         throw new UnsupportedOperationException("Not yet implemented");
     }
 
+    //TODO .. move those mocked method where they belong.
     public Object increase() {
         throw new UnsupportedOperationException("Not yet implemented");
     }
