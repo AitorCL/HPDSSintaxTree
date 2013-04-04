@@ -1,4 +1,3 @@
-
 package sintaxtree.Nodes.Operators;
 
 import static org.junit.Assert.*;

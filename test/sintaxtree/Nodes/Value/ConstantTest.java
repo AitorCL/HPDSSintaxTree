@@ -7,13 +7,14 @@ import sintaxtree.types.DoubleType;
 import sintaxtree.types.IntegerType;
 
 public class ConstantTest {
-    
+
     @Test
     public void DoubleConstantTest() {
         Constant constant = new Constant(new DoubleType(1.0));
         assertEquals(DoubleType.class, constant.evaluate().getClass());
         assertEquals(1.0, (double) constant.evaluate().getValue(), 0.0);
     }
+
     @Test
     public void IntegerConstantTest() {
         Constant constant = new Constant(new IntegerType(1));

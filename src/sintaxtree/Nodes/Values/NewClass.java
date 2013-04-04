@@ -9,7 +9,6 @@ package sintaxtree.Nodes.Values;
  * @author AitorC
  */
 public class NewClass {
- 
     /*TODO siguiente iteracion de la prácticas
      * public class operator
      * {
@@ -20,22 +19,14 @@ public class NewClass {
      * además añadir getters y setters
      */
     /**
-     * prublic static operator getString symbol(){
-     * return operatorMap.get(symbol);
-     * 
+     * prublic static operator getString symbol(){ return
+     * operatorMap.get(symbol);
+     *
      * }
-     * 
-     * private static hash hmap<symbol,operator>
-     * static{
-     * inicializamos el operatormap
-     * operatorMap = new hashMap<>();
-     * operatorMap.put("+", new operator("+",binary))
-     * }
-     * /
-     * operatorType.BINARY
-     * + -> operator
-     *      leftchild
-     *      rightchild
+     *
+     * private static hash hmap<symbol,operator> static{ inicializamos el
+     * operatormap operatorMap = new hashMap<>(); operatorMap.put("+", new
+     * operator("+",binary)) } / operatorType.BINARY + -> operator leftchild
+     * rightchild
      */
-   
 }

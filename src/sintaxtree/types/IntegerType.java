@@ -7,5 +7,4 @@ public class IntegerType extends Type<java.lang.Integer> {
     public IntegerType(Integer value) {
         super(value);
     }
-    
 }

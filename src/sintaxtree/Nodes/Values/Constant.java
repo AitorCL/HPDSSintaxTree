@@ -1,9 +1,7 @@
-
 package sintaxtree.Nodes.Values;
 
 import sintaxtree.Nodes.Node;
 import sintaxtree.Type;
-
 
 public class Constant extends Node {
 
@@ -21,7 +19,4 @@ public class Constant extends Node {
     public Type evaluate() {
         return value;
     }
-
-
-    
 }

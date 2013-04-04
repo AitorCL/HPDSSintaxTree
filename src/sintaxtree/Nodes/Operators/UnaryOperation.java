@@ -27,10 +27,10 @@ public class UnaryOperation extends Operation {
 
     @Override
     public Type evaluate() {
-        return calculate(searchCalculator(getNextNode().evaluate()),getNextNode().evaluate());
+        return calculate(searchCalculator(getNextNode().evaluate()), getNextNode().evaluate());
     }
 
-    private Calculator searchCalculator(Type childNode ) {
+    private Calculator searchCalculator(Type childNode) {
 
         if (childNode == null) {
             return null;
@@ -71,6 +71,7 @@ public class UnaryOperation extends Operation {
 
     }
     //TODO .. move those mocked method where they belong.
+
     public Object increase() {
         throw new UnsupportedOperationException("Not yet implemented");
     }
