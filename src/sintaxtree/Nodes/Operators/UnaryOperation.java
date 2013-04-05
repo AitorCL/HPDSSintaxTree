@@ -21,7 +21,7 @@ public class UnaryOperation extends Operation {
     @Override
     public Type evaluate() {
         Calculator calculator = Calculate.searchCalculator(getNextNode().evaluate());
-        return Calculate.performUnaryCalculation(calculator, getNextNode().evaluate(),unaryOperator);
+        return Calculate.performCalculation(calculator, getNextNode().evaluate(),unaryOperator);
     }
 
      //TODO .. move those mocked method where they belong.

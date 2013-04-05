@@ -28,6 +28,6 @@ public class BinaryOperation extends Operation {
         Type left = getLeftNode().evaluate();
         Type right = getRigthNode().evaluate();
         Calculator calculator = Calculate.searchCalculator(left, right);
-        return Calculate.performBinaryCalculation(calculator, left, right,operator);
+        return Calculate.performCalculation(calculator, left, right,operator);
     }   
 }
